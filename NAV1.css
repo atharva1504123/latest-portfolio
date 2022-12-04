@@ -437,7 +437,7 @@ article {
 
 @media (min-width: 322px) and (max-width: 376px) {
   #about {
-    height: 331vh;
+    height: 330vh;
   }
 }
 
@@ -570,7 +570,7 @@ hr {
   .about-title{
     top: 4rem;
   }
-  
+
   .dynamic-text {
     line-height: 110px;
     top: -1rem;
@@ -603,7 +603,7 @@ hr {
   .more-btn-link {
     padding: 14px 12px;
   }
-  
+
   .intro{
     top: 15rem !important;
   }
@@ -619,7 +619,7 @@ hr {
   .about-title{
     top: 4rem;
   }
-  
+
   .dynamic-text {
     line-height: 110px;
     top: 1.5rem;
@@ -653,8 +653,9 @@ hr {
   .more-btn-link {
     padding: 15px 19px;
   }
+
   .intro{
-    top: 19rem !important;
+    top: 20rem !important;
   }
 }
 
@@ -931,7 +932,7 @@ hr {
   .mg-top{
     margin-top: -1rem !important;
   }
-  
+
   .col-margin{
     margin-bottom: 8rem;
   }
@@ -953,7 +954,7 @@ hr {
   .mg-top{
     margin-top: -1rem !important;
   }
-  
+
   .col-margin{
     margin-bottom: 8rem;
   }
@@ -1251,6 +1252,9 @@ h2 {
     margin-top: 5rem !important;
   }
 
+  .gutter-x{
+    --bs-gutter-x: 1rem !important;
+  }
   .click-img{
     margin-top: -8rem !important;
   }
@@ -1374,4 +1378,20 @@ a:hover, a:focus {
 
 footer {
   background: #212529;
+}
+
+.certi-box{
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.certi-container:hover .certi-box {
+  transform: rotateY(10deg);
+}
+
+.certi-box:hover {
+  transform: rotateY(0deg) scale(1);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
 }
